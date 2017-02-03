@@ -13,14 +13,25 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # GET /resource/edit
-  # def edit
-  #   super
-  # end
+   def edit
+     super
+   end
 
   # PUT /resource
-  # def update
-  #   super
-  # end
+   def update
+     super
+     u.avatar = params[:file] # Assign a file like this, or
+
+# like this
+     File.open('somewhere') do |f|
+       u.avatar = f
+     end
+
+     u.save!
+     u.avatar.url # => '/url/to/file.png'
+     u.avatar.current_path # => 'path/to/file.png'
+     u.avatar_identifier # => 'file.png'
+   end
 
   # DELETE /resource
   # def destroy
