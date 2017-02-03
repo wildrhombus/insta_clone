@@ -52,4 +52,6 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   config.action_mailer.default_url_options = { host: 'localhost', port: 5000 }
+  ENV['SECRET_KEY_BASE'] = "bc1a7ef2efe322facbee5721beedbf82d583276353758277ae5617b2d57a0154aaca2586f920fbad142846aea619bba044de5ea2e9f16e7bb27eb61de51f2047"
+  ENV['FACEBOOK_APP_SECRET'] = "23695eb49efe2f4f67c6a8d7ea57eb98"
 end

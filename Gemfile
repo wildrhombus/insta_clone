@@ -36,14 +36,28 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# login gem
 gem 'devise'
+gem 'omniauth-facebook'
+
+gem 'cancancan'
+
+gem 'pry'
+gem 'shoulda'
+
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+gem 'fog-aws'
+gem "mini_magick"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
 
-gem 'rails_12factor', group: :production
+group :production do
+  gem 'rails_12factor'
+end
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
@@ -55,8 +69,13 @@ group :development do
 end
 
 group :test do
+  gem "factory_girl_rails", "~> 4.0"
+  gem 'rspec-collection_matchers'
   gem 'rspec-rails'
+  gem 'rspec-activemodel-mocks'
   gem 'capybara'
+  gem 'poltergeist'
+  gem 'database_cleaner'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
