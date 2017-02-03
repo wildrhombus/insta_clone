@@ -35,6 +35,6 @@ class PostsController < ApplicationController
     redirect_to '/posts'
   end
   def post_params
-    params.require(:post).permit(:name, :description)
+    params.require(:post).permit(:name, :description, :user_id)
   end
 end
