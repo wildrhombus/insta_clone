@@ -14,6 +14,10 @@ class AvatarUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
+  def cache_dir
+    "#{Rails.root}/tmp/uploads"
+  end
+  
   process resize_to_fit: [800, 800]
 
   # Create different versions of your uploaded files:
