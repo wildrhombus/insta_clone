@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - postgres@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+    <database id="1" name="postgres">
+      <object-id>12669</object-id>
+      <visible>1</visible>
+    </database>
+    <database id="2" name="lesliep">
+      <object-id>16385</object-id>
+    </database>
+    <database id="3" name="hub_development">
+      <object-id>16386</object-id>
+    </database>
+    <database id="4" name="res_club_authenticator_development">
+      <object-id>22473</object-id>
+    </database>
+    <database id="5" name="hub_test">
+      <object-id>31341</object-id>
+    </database>
+    <database id="6" name="yelp_clone_development">
+      <object-id>38960</object-id>
+    </database>
+    <database id="7" name="yelp_clone_test">
+      <object-id>39575</object-id>
+    </database>
+    <database id="8" name="instaclone_development">
+      <object-id>39663</object-id>
+    </database>
+    <database id="9" name="instaclone_test">
+      <object-id>39952</object-id>
+    </database>
+    <database id="10" name="ruby-getting-started_development">
+      <object-id>40013</object-id>
+    </database>
+    <database id="11" name="ruby-getting-started_test">
+      <object-id>40014</object-id>
+    </database>
+    <database id="12" name="newdevise_development">
+      <object-id>40033</object-id>
+    </database>
+    <database id="13" name="newdevise_test">
+      <object-id>40108</object-id>
+    </database>
+    <database id="14" name="insta_clone_development">
+      <object-id>40152</object-id>
+      <visible>1</visible>
+    </database>
+    <database id="15" name="insta_clone_test">
+      <object-id>40297</object-id>
+    </database>
+    <schema id="16" parent="1" name="public">
+      <object-id>2200</object-id>
+      <visible>1</visible>
+      <introspection-timestamp>2017-02-06.09:20:50.916</introspection-timestamp>
+    </schema>
+    <schema id="17" parent="1" name="pg_catalog">
+      <object-id>11</object-id>
+    </schema>
+    <schema id="18" parent="1" name="pg_toast">
+      <object-id>99</object-id>
+    </schema>
+    <schema id="19" parent="1" name="pg_temp_1">
+      <object-id>11848</object-id>
+    </schema>
+    <schema id="20" parent="1" name="pg_toast_temp_1">
+      <object-id>11849</object-id>
+    </schema>
+    <schema id="21" parent="1" name="information_schema">
+      <object-id>12381</object-id>
+    </schema>
+  </database-model>
+</dataSource>
